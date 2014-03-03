@@ -23,7 +23,7 @@
 
 @mixin border-top-right-radius($radius: $default-border-radius) { @include _bd("top", "right", $radius); }
 
-@mixin border-bototm-left-radius($radius: $default-border-radius) { @include _bd("bottom", "left", $radius); }
+@mixin border-bottom-left-radius($radius: $default-border-radius) { @include _bd("bottom", "left", $radius); }
 
 @mixin border-bottom-right-radius($radius: $default-border-radius) { @include _bd("bottom", "right", $radius); }
 

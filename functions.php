@@ -2,7 +2,9 @@
 
 if ( ! function_exists( 'portfolio_setup' ) ) :
 /**
- * Twenty Fourteen setup.
+ * Porfolio setup.
+ *
+ * Based on twenty fourteen template
  *
  * Set up theme defaults and registers support for various WordPress features.
  *
@@ -10,15 +12,15 @@ if ( ! function_exists( 'portfolio_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support post thumbnails.
  *
- * @since Twenty Fourteen 1.0
+ * @since Porfolio 0
  */
 function portfolio_setup() {
 
 	/*
-	 * Make Twenty Fourteen available for translation.
+	 * Make Porfolio available for translation.
 	 *
 	 * Translations can be added to the /languages/ directory.
-	 * If you're building a theme based on Twenty Fourteen, use a find and
+	 * If you're building a theme based on Porfolio, use a find and
 	 * replace to change 'portfolio' to the name of your theme in all
 	 * template files.
 	 */
@@ -77,7 +79,7 @@ add_action( 'after_setup_theme', 'portfolio_setup' );
 /**
  * Adjust content_width value for image attachment template.
  *
- * @since Twenty Fourteen 1.0
+ * @since Porfolio 1.0
  *
  * @return void
  */
@@ -91,15 +93,15 @@ add_action( 'template_redirect', 'portfolio_content_width' );
 /**
  * Getter function for Featured Content Plugin.
  *
- * @since Twenty Fourteen 1.0
+ * @since Porfolio 1.0
  *
  * @return array An array of WP_Post objects.
  */
 function portfolio_get_featured_posts() {
 	/**
-	 * Filter the featured posts to return in Twenty Fourteen.
+	 * Filter the featured posts to return in Porfolio.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since Porfolio 1.0
 	 *
 	 * @param array|bool $posts Array of featured posts, otherwise false.
 	 */
@@ -109,7 +111,7 @@ function portfolio_get_featured_posts() {
 /**
  * A helper conditional function that returns a boolean value.
  *
- * @since Twenty Fourteen 1.0
+ * @since Porfolio 1.0
  *
  * @return bool Whether there are featured posts.
  */
@@ -118,9 +120,9 @@ function portfolio_has_featured_posts() {
 }
 
 /**
- * Register three Twenty Fourteen widget areas.
+ * Register three Porfolio widget areas.
  *
- * @since Twenty Fourteen 1.0
+ * @since Porfolio 1.0
  *
  * @return void
  */
@@ -159,9 +161,9 @@ function portfolio_widgets_init() {
 add_action( 'widgets_init', 'portfolio_widgets_init' );
 
 /**
- * Register Lato Google font for Twenty Fourteen.
+ * Register Lato Google font for Porfolio.
  *
- * @since Twenty Fourteen 1.0
+ * @since Porfolio 1.0
  *
  * @return string
  */
@@ -181,7 +183,7 @@ function portfolio_font_url() {
 /**
  * Enqueue scripts and styles for the front end.
  *
- * @since Twenty Fourteen 1.0
+ * @since Porfolio 1.0
  *
  * @return void
  */
@@ -189,27 +191,26 @@ function portfolio_scripts() {
 	// Add Lato font, used in the main stylesheet.
 	wp_enqueue_style( 'portfolio-lato', portfolio_font_url(), array(), null );
 
-	// Add Genericons font, used in the main stylesheet.
-	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.0.2' );
-
-	// Load our main stylesheet.
-	wp_enqueue_style( 'portfolio-style', get_stylesheet_uri(), array( 'genericons' ) );
+	// Add main stylesheet
+	wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.css', array(), '1.0' );
 
 	// Load the Internet Explorer specific stylesheet.
-	wp_enqueue_style( 'portfolio-ie', get_template_directory_uri() . '/css/ie.css', array( 'portfolio-style', 'genericons' ), '20131205' );
-	wp_style_add_data( 'portfolio-ie', 'conditional', 'lt IE 9' );
+	//wp_enqueue_style( 'portfolio-ie', get_template_directory_uri() . '/css/ie.css', array( 'portfolio-style', 'genericons' ), '20131205' );
+	//wp_style_add_data( 'portfolio-ie', 'conditional', 'lt IE 9' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	if ( is_singular() && wp_attachment_is_image() ) {
-		wp_enqueue_script( 'portfolio-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20130402' );
-	}
+	//if ( is_singular() && wp_attachment_is_image() ) {
+		//wp_enqueue_script( 'portfolio-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20130402' );
+	//}
 
 	if ( is_active_sidebar( 'sidebar-3' ) ) {
-		wp_enqueue_script( 'jquery-masonry' );
+		wp_enqueue_script( 'jquery-masonry',  get_template_directory_uri() . '/js/masonry.pkgd.min.js', array( 'jquery' ), '03032014' );
 	}
+
+    wp_enqueue_script( 'jquery-masonry',  get_template_directory_uri() . '/js/masonry.pkgd.min.js', array( 'jquery' ), '03032014' );
 
 	if ( is_front_page() && 'slider' == get_theme_mod( 'featured_content_layout' ) ) {
 		wp_enqueue_script( 'portfolio-slider', get_template_directory_uri() . '/js/slider.js', array( 'jquery' ), '20131205', true );
@@ -219,14 +220,13 @@ function portfolio_scripts() {
 		) );
 	}
 
-	wp_enqueue_script( 'portfolio-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20131209', true );
 }
 add_action( 'wp_enqueue_scripts', 'portfolio_scripts' );
 
 /**
  * Enqueue Google fonts style to admin screen for custom header display.
  *
- * @since Twenty Fourteen 1.0
+ * @since Porfolio 1.0
  *
  * @return void
  */
@@ -239,16 +239,16 @@ if ( ! function_exists( 'portfolio_the_attached_image' ) ) :
 /**
  * Print the attached image with a link to the next attached image.
  *
- * @since Twenty Fourteen 1.0
+ * @since Porfolio 1.0
  *
  * @return void
  */
 function portfolio_the_attached_image() {
 	$post                = get_post();
 	/**
-	 * Filter the default Twenty Fourteen attachment size.
+	 * Filter the default Porfolio attachment size.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since Porfolio 1.0
 	 *
 	 * @param array $dimensions {
 	 *     An array of height and width dimensions.
@@ -308,7 +308,7 @@ if ( ! function_exists( 'portfolio_list_authors' ) ) :
 /**
  * Print a list of all site contributors who published at least one post.
  *
- * @since Twenty Fourteen 1.0
+ * @since Porfolio 1.0
  *
  * @return void
  */
@@ -361,7 +361,7 @@ endif;
  * 6. Single views.
  * 7. Featured content layout.
  *
- * @since Twenty Fourteen 1.0
+ * @since Porfolio 1.0
  *
  * @param array $classes A list of existing body class values.
  * @return array The filtered body class list.
@@ -412,7 +412,7 @@ add_filter( 'body_class', 'portfolio_body_classes' );
  * Adds a post class to denote:
  * Non-password protected page with a post thumbnail.
  *
- * @since Twenty Fourteen 1.0
+ * @since Porfolio 1.0
  *
  * @param array $classes A list of existing post class values.
  * @return array The filtered post class list.
@@ -430,7 +430,7 @@ add_filter( 'post_class', 'portfolio_post_classes' );
  * Create a nicely formatted and more specific title element text for output
  * in head of document, based on current view.
  *
- * @since Twenty Fourteen 1.0
+ * @since Porfolio 1.0
  *
  * @param string $title Default title text for current view.
  * @param string $sep Optional separator.

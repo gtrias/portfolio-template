@@ -5,11 +5,18 @@
 
 // background vars
 $backgroundColor: #fff; 														// default background information
+$leftSidebarBackgroundColor: #000;
+
+$siteHeaderColor: #2EA2CC;
+$siteHeaderFontSize: 24px;
+
+$siteSubTitleColor: #2EA2CC;
+$siteSubTitleFontSize: 16px;
 
 // font vars
 $fontSize: 14px; 																// default font size. Change here will adjust sizes across the board.
 $fontFamily: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;	// default fonts
-$fontColor: #444; 																// default font color
+$fontColor: #8F8F8F; 																// default font color
 
 // form vars
 $formFont: $fontFamily; 														// default font font
@@ -17,21 +24,34 @@ $formFont: $fontFamily; 														// default font font
 // link vars
 $linkColor: #333;																// default link INERT color
 $linkHoverColor: #000;															// default link HOVER color
-$linkDecoration: underline;														// default link decoration
+$linkDecoration: none;														// default link decoration
 
 // heading vars
 $headingFamily: "Georgia", "Times New Roman", serif;							// default heading font
-$headingColor: #181818;															// default heading color
+$headingColor: #fff;															// default heading color
+
+// Article vars
+$articleColor : #E5E5E5;
+$articleHeaderBgColor: #000;
+$articleHeaderFontSize: 18px;
+$articleHeaderColor: #FFF;
+
+// Widget vars
+$widgetSepColor: #2EA2CC;
 
 // grid variables
 $baseWidth: 		960px; 														// change this to alter the overall width of the grid
 $baseWidthMQ:		960px; 														// base width for media query calculations in layout file
 $baseColWidth: 		40px;														// change this the alter the grid calculation, see _mixins file for more details
 $baseGutterWidth:	20px;														// calculation has changed, this is mainly here for consistency with 960.gs
-$isFluid: 			false;														// want a fluid grid by default?
+$isFluid: 			true;														// want a fluid grid by default?
 
 // ------ CHANGE MAY CAUSE UNDESIRED RESULTS
 $baseColCount: 		16;															// number of cols to generate
+
+
+$headingHoverColor: #2ea2cc;
+
 
 // media query dimensions
 $tabletWidth: 			768px;

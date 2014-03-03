@@ -1,0 +1,88 @@
+@import reset, colors, skeleton, layout
+
+// General styles
+*
+  font-family: $fontFamily
+  font-size: $fontSize
+  color: $fontColor
+
+a
+  color: $linkColor
+  text-decoration: $linkDecoration
+  &:hover
+    color: $linkHoverColor
+
+h1#site-title
+  color: $siteHeaderColor
+  font-size: $siteHeaderFontSize
+
+h2#site-description
+  color: $siteSubTitleColor
+  font-size: $siteSubTitleFontSize
+  line-height: $siteSubTitleFontSize * 2.3
+
+header#branding
+  font-family: $headingFamily
+  color: $headingColor
+  +border-top-right-radius(8px)
+  +border-bottom-right-radius(8px)
+  padding:
+    top: 20px
+    bottom: 20px
+  #header-contents
+    padding: 0 20px
+  a
+    color: $headingColor
+    &:hover
+      color: $headingHoverColor
+
+// Accesibility classes
+.assistive-text
+  display: none
+
+
+// Articles styles
+article
+  max-width: 250px
+  +border-bottom-left-radius(6px)
+  +border-bottom-right-radius(6px)
+  +box-shadow('2px 2px 2px #888')
+  margin-bottom: 20px
+  background-color: $articleColor
+  header
+    background-color: $articleHeaderBgColor
+    font-size: $articleHeaderFontSize
+    line-height: $articleHeaderFontSize * 1.5
+    padding:
+      top: 5px
+      left: 20px
+      right: 20px
+      bottom: 5px
+    h1 a
+      color: $articleHeaderColor
+      &:hover
+        color: $headingHoverColor
+  .entry-content
+    padding:
+      top: 20px
+      left: 20px
+      right: 20px
+      bottom: 20px
+  .entry-meta
+    float: right
+    margin-top: -14px
+    a
+      color: $articleHeaderColor
+
+// Left sidebar styles
+#sidebar
+  .widget
+    border-top: solid 1px $widgetSepColor
+    margin-bottom: 10px
+    padding-top: 10px
+
+.widget_qtranslate
+  height: 13px
+  ul li
+    float: left
+    margin-right: 5px

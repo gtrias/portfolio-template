@@ -1,0 +1,422 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/reset\.sass}line{font-family:\000032}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/reset\.sass}line{font-family:\0000323}}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/reset\.sass}line{font-family:\0000327}}
+body {
+  line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/reset\.sass}line{font-family:\0000330}}
+ol, ul {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/reset\.sass}line{font-family:\0000333}}
+blockquote, q {
+  quotes: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/reset\.sass}line{font-family:\0000336}}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/reset\.sass}line{font-family:\0000341}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+ * SASS/SCSS/Compass Transcription of Skeleton Responsive Grid
+ * originally authored by Dave Gamache. This translation offers
+ * mixins that support fluid and as well as fixed grids to supplement
+ * the work that Dave Gamache has done.
+ * @author Dennis Thompson <http://www.atomicpages.net>
+ * @copyright Copyright (c) 2013 AtomicPages LLC
+ * @license MIT
+ * @version 1.6.1
+ */
+/* BASE GRID
+ * ------------------------------------------------ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/skeleton\.scss}line{font-family:\0000322}}
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/skeleton\.scss}line{font-family:\0000329}}
+  .container .column,
+  .container .columns {
+    float: left;
+    display: inline;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/skeleton\.scss}line{font-family:\0000333}}
+    .container .column.alpha,
+    .container .columns.alpha {
+      margin-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/skeleton\.scss}line{font-family:\0000334}}
+    .container .column.omega,
+    .container .columns.omega {
+      margin-right: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/skeleton\.scss}line{font-family:\0000337}}
+.row {
+  margin-bottom: 20px; }
+
+/* Overrides */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000321}}
+.container .column,
+.container .columns {
+  margin-left: 1%;
+  margin-right: 1%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000333}}
+.container .one.column,
+.container .one.columns {
+  width: 4.25%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000335}}
+.container .two.columns {
+  width: 10.5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000335}}
+.container .three.columns {
+  width: 16.75%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000335}}
+.container .four.columns {
+  width: 23%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000335}}
+.container .five.columns {
+  width: 29.25%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000335}}
+.container .six.columns {
+  width: 35.5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000335}}
+.container .seven.columns {
+  width: 41.75%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000335}}
+.container .eight.columns {
+  width: 48%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000335}}
+.container .nine.columns {
+  width: 54.25%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000335}}
+.container .ten.columns {
+  width: 60.5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000335}}
+.container .eleven.columns {
+  width: 66.75%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000335}}
+.container .twelve.columns {
+  width: 73%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000335}}
+.container .thirteen.columns {
+  width: 79.25%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000335}}
+.container .fourteen.columns {
+  width: 85.5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000335}}
+.container .fifteen.columns {
+  width: 91.75%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000335}}
+.container .sixteen.columns {
+  width: 98%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000339}}
+.container .columns.one-third {
+  width: 30.66667%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000340}}
+.container .columns.two-thirds {
+  width: 63.33333%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000377}}
+.container .offset-by-one {
+  padding-left: 6.25%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000377}}
+.container .offset-by-two {
+  padding-left: 12.5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000377}}
+.container .offset-by-three {
+  padding-left: 18.75%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000377}}
+.container .offset-by-four {
+  padding-left: 25%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000377}}
+.container .offset-by-five {
+  padding-left: 31.25%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000377}}
+.container .offset-by-six {
+  padding-left: 37.5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000377}}
+.container .offset-by-seven {
+  padding-left: 43.75%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000377}}
+.container .offset-by-eight {
+  padding-left: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000377}}
+.container .offset-by-nine {
+  padding-left: 56.25%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000377}}
+.container .offset-by-ten {
+  padding-left: 62.5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000377}}
+.container .offset-by-eleven {
+  padding-left: 68.75%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000377}}
+.container .offset-by-twelve {
+  padding-left: 75%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000377}}
+.container .offset-by-thirteen {
+  padding-left: 81.25%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000377}}
+.container .offset-by-fourteen {
+  padding-left: 87.5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000377}}
+.container .offset-by-fifteen {
+  padding-left: 93.75%; }
+
+/* TABLET (PORTRAIT)
+ * ------------------------------------------------ */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/skeleton\.scss}line{font-family:\0000347}}
+  .container {
+    width: 768px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/skeleton\.scss}line{font-family:\0000351}}
+    .container .column.alpha, .container .columns.alpha {
+      margin-left: 0;
+      margin-right: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/skeleton\.scss}line{font-family:\0000357}}
+    .container .column.omega, .container .columns.omega {
+      margin-right: 0;
+      margin-left: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/skeleton\.scss}line{font-family:\0000365}}
+  .alpha.omega {
+    margin-left: 0;
+    margin-right: 0; } }
+/*  MOBILE (PORTRAIT)
+ * ------------------------------------------------ */
+@media only screen and (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000388}}
+  .container {
+    width: 300px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000391}}
+    .container .column,
+    .container .columns {
+      margin-left: 0;
+      margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000399}}
+    .container .one.column {
+      width: 300px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\00003129}}
+    .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns, .container .thirteen.columns, .container .fourteen.columns, .container .fifteen.columns, .container .sixteen.columns {
+      width: 300px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\00003103}}
+    .container .one-third.column {
+      width: 300px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\00003104}}
+    .container .two-third.column {
+      width: 300px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\00003129}}
+    .container .offset-by-one, .container .offset-by-two, .container .offset-by-three, .container .offset-by-four, .container .offset-by-five, .container .offset-by-six, .container .offset-by-seven, .container .offset-by-eight, .container .offset-by-nine, .container .offset-by-ten, .container .offset-by-eleven, .container .offset-by-twelve, .container .offset-by-thirteen, .container .offset-by-fourteen, .container .offset-by-fifteen {
+      padding-left: 0; } }
+/* MOBILE (LANDSCAPE)
+ * ------------------------------------------------ */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000388}}
+  .container {
+    width: 420px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000391}}
+    .container .column,
+    .container .columns {
+      margin-left: 0;
+      margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\0000399}}
+    .container .one.column {
+      width: 420px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\00003129}}
+    .container .one.columns, .container .two.columns, .container .three.columns, .container .four.columns, .container .five.columns, .container .six.columns, .container .seven.columns, .container .eight.columns, .container .nine.columns, .container .ten.columns, .container .eleven.columns, .container .twelve.columns, .container .thirteen.columns, .container .fourteen.columns, .container .fifteen.columns, .container .sixteen.columns {
+      width: 420px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\00003103}}
+    .container .one-third.column {
+      width: 420px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\00003104}}
+    .container .two-third.column {
+      width: 420px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/_dependencies\.scss}line{font-family:\00003129}}
+    .container .offset-by-one, .container .offset-by-two, .container .offset-by-three, .container .offset-by-four, .container .offset-by-five, .container .offset-by-six, .container .offset-by-seven, .container .offset-by-eight, .container .offset-by-nine, .container .offset-by-ten, .container .offset-by-eleven, .container .offset-by-twelve, .container .offset-by-thirteen, .container .offset-by-fourteen, .container .offset-by-fifteen {
+      padding-left: 0; } }
+/* CLEARING
+ * ------------------------------------------------ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/skeleton\.scss}line{font-family:\0000392}}
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/skeleton\.scss}line{font-family:\0000399}}
+.clearfix, .row {
+  zoom: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/skeleton\.scss}line{font-family:\00003101}}
+  .clearfix:before, .clearfix:after, .row:before, .row:after {
+    content: "\0020";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/skeleton\.scss}line{font-family:\00003109}}
+  .clearfix:after, .row:after {
+    clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/skeleton\.scss}line{font-family:\00003111}}
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/layout\.sass}line{font-family:\000031}}
+#page header#branding {
+  background-color: black; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/layout\.sass}line{font-family:\000034}}
+header#branding {
+  margin-left: 0;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/layout\.sass}line{font-family:\000039}}
+#main {
+  margin-top: 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\000034}}
+* {
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #8f8f8f; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\000039}}
+a {
+  color: #333333;
+  text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000312}}
+  a:hover {
+    color: black; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000315}}
+h1#site-title {
+  color: #2ea2cc;
+  font-size: 24px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000319}}
+h2#site-description {
+  color: #2ea2cc;
+  font-size: 16px;
+  line-height: 36.8px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000324}}
+header#branding {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: white;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  border-top-right-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-bottom-right-radius: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000332}}
+  header#branding #header-contents {
+    padding: 0 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000334}}
+  header#branding a {
+    color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000336}}
+    header#branding a:hover {
+      color: #2ea2cc; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000340}}
+.assistive-text {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000345}}
+article {
+  max-width: 250px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-left-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  border-bottom-right-radius: 6px;
+  -webkit-box-shadow: 2px 2px 2px #888;
+  -moz-box-shadow: 2px 2px 2px #888;
+  box-shadow: 2px 2px 2px #888;
+  margin-bottom: 20px;
+  background-color: #e5e5e5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000352}}
+  article header {
+    background-color: black;
+    font-size: 18px;
+    line-height: 27px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000361}}
+    article header h1 a {
+      color: white; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000363}}
+      article header h1 a:hover {
+        color: #2ea2cc; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000365}}
+  article .entry-content {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000371}}
+  article .entry-meta {
+    float: right;
+    margin-top: -14px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000374}}
+    article .entry-meta a {
+      color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000379}}
+#sidebar .widget {
+  border-top: solid 1px #2ea2cc;
+  margin-bottom: 10px;
+  padding-top: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000384}}
+.widget_qtranslate {
+  height: 13px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/genarcurri\/wp-content\/themes\/portfolio-template\/sass\/main\.sass}line{font-family:\0000386}}
+  .widget_qtranslate ul li {
+    float: left;
+    margin-right: 5px; }

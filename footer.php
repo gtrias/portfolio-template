@@ -12,7 +12,7 @@
 
 	</div><!-- #main -->
 
-	<footer id="colophon" role="contentinfo">
+	<footer id="colophon" role="contentinfo" class="sixteen columns">
 
 			<?php
 				/* A sidebar in the footer? Yep. You can can customize
@@ -30,6 +30,17 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+
+<script>
+// with jQuery
+jQuery(document).ready(function($){
+    $('#content').masonry({
+      gutter: 20,
+      columnWidth: 20,
+      itemSelector: '.post'
+    });
+});
+</script>
 
 </body>
 </html>
